@@ -19,10 +19,30 @@ public class WorkingWithString {
         System.out.println(builder.toString());
 
         System.out.println(name.concat("  Now"));
-        System.out.println(name.substring(0,3));
+        System.out.println(name.substring(0,1));
         System.out.println(name.charAt(0));
         System.out.println(name.startsWith("C"));
         System.out.println(name.endsWith("t"));
+        
+//        int j=name.length();
+//        for (int i = 0; i < name.length(); i++) {
+//            
+//            System.out.println(name.substring(j,i+1));
+//            //System.out.println(j);
+//            --j;
+//        }
+        while (name.length()>0) {
+            System.out.println(name.substring(0,1));
+            name = name.substring(1);  
+        }
+        String name1 = "chalermchat";
+        while (name1.length()>0) {
+            System.out.println(name1.substring(1));
+            name1 = name1.substring(1);  
+        }
+        
+        
+        
         
     }
 }

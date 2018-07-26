@@ -5,9 +5,8 @@ public class PrimeFactor {
 
         String returnPrime = "";
         for (int i = 2; i <= prime; i++) {
-            while (prime % i == 0) {
+            for (;prime % i == 0;prime = prime / i) {
                 returnPrime = returnPrime.concat("" + i);
-                prime = prime / i;
             }
         }
 
